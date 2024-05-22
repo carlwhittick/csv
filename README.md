@@ -18,7 +18,7 @@ $ composer require offdev/csv
 
 ## Introduction
 
-This parser has been written, in order to parser big CSV files from almost any data source in an easy and convenient way. It also provides the possibility to validate each record from the CSV source.
+This parser has been written, in order to parse big CSV files from almost any data source in an easy and convenient way. It also provides the possibility to validate each record from the CSV source.
 
 In order for the parser to work, you need to feed it with data. This data will be represented as a stream. This allows us to handle huge amounts of data. The parser can also work with HTTP streams.
 
@@ -88,7 +88,7 @@ while (!$parser->eof()) {
 }
 ```
 
-The example above produces following output:
+The example above produces the following output:
 
 ```
 $ php example.php
@@ -189,7 +189,7 @@ Got item: Robert
 
 ## Validator
 
-Now, most of the times, we want to make sure the data contained in the CSV is in a given format. This package uses the Laravel validation package in order to provide a rule engine for the content of the CSV. A full list of all rules can be found [here](https://laravel.com/docs/5.7/validation#available-validation-rules).
+Now, most of the time, we want to make sure the data contained in the CSV is in a given format. This package uses the Laravel validation package in order to provide a rule engine for the content of the CSV. A full list of all rules can be found [here](https://laravel.com/docs/5.7/validation#available-validation-rules).
 
 Usage:
 
